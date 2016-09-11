@@ -11,7 +11,9 @@ bool OneShot::update()
     if (m_triggered && (millis() >= m_timeout)) {
       m_triggered = false;
     }
+    return true;
   }
+  return false;
 }
 
 void OneShot::trigger()
