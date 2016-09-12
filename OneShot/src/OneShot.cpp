@@ -8,6 +8,8 @@ OneShot::OneShot(const unsigned int dly) :
 bool OneShot::update()
 {
   if (StateMachine::update()) {
+    // If in triggered state and timeout period has elapsed,
+    // turn off triggered state.
     if (m_triggered && (millis() >= m_timeout)) {
       m_triggered = false;
     }
@@ -18,10 +20,14 @@ bool OneShot::update()
 
 void OneShot::trigger()
 {
+  // Set time of timeout.
   m_timeout = millis() + m_delay;
+  // Set triggered state.
   m_triggered = true;
 }
 
-bool OneShot::isTriggered() const{
+bool OneShot::isTriggered() const
+{
+  // Return triggered state.
   return m_triggered;
 }
