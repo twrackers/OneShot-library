@@ -25,6 +25,7 @@ class OneShot : public StateMachine
     
     // Returns true if this object has been triggered but has not timed out yet;
     // false otherwise.
+    // @return triggered state.
     bool isTriggered() const;    
 };
 
