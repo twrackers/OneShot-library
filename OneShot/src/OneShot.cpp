@@ -10,7 +10,7 @@ bool OneShot::update()
   if (StateMachine::update()) {
     // If in triggered state and timeout period has elapsed,
     // turn off triggered state.
-    if (m_triggered && (millis() >= m_timeout)) {
+    if (m_triggered && ((millis() - m_timeout) >= 0)) {
       m_triggered = false;
     }
     return true;
