@@ -5,13 +5,13 @@
 #######################################
 # Datatypes (KEYWORD1)
 #######################################
-OneShot	KEYWORD1
+OneShot KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
 #######################################
-update	KEYWORD2
-trigger	KEYWORD2
+update  KEYWORD2
+trigger KEYWORD2
 isTriggered KEYWORD2
 
 #######################################
