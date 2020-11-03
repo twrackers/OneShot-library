@@ -7,6 +7,8 @@ Because a one-shot is retriggerable, it can be used as a "watchdog timer" by giv
 
 ## Examples ##
 
+The *OneShot* library includes a [`WatchdogDemo` sketch](https://github.com/twrackers/OneShot-library/blob/main/examples/WatchdogDemo/WatchdogDemo.ino) in the `examples` directory.  This sketch shows how the `OneShot` class can be used as a watchdog timer.  The sketch uses the `OneShot` class and the `StateMachine` class (which is used by the `OneShot` class anyway).
+
 ## Dependencies ##
 
 The `OneShot` library requires installation of the `StateMachine` library.
