@@ -33,7 +33,7 @@ Checks if it is time to update the state of the `OneShot` object.  This method s
 
 #### Returns ####
 
-- **bool:** 'true' if it was time to update the object's internal state machine.  Usually can be ignored.
+- **bool:** `true` if it was time to update the object's internal state machine.  Usually can be ignored.
 
 ### *bool isTriggered() const* ###
 
