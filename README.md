@@ -16,3 +16,30 @@ The `OneShot` library requires installation of the `StateMachine` library.
 ## Installation ##
 
 Instructions for installing the *OneShot* library can be found in file `INSTALL.md` in this repository at [https://github.com/twrackers/OneShot-library/blob/main/INSTALL.md](https://github.com/twrackers/OneShot-library/blob/main/INSTALL.md).
+
+## API ##
+
+### *OneShot(const unsigned int dly)* ###
+
+The constructor creates an instance of a `OneShot` object with a specified timeout interval.
+
+#### Arguments ####
+
+- **dly: const unsigned int:** Timeout interval in milliseconds.  If **dly** milliseconds pass since the most recent trigger of the `OneShot`, it will switch from an on state (`true`) to off (`false`).
+
+### *virtual bool update()* ###
+
+Checks if it is time to update the state of the `OneShot` object.  This method should be called from within the Arduino sketch's `loop()` function.
+
+#### Returns ####
+
+- **bool:** 'true' if it was time to update the object's internal state machine.  Usually can be ignored.
+
+### *bool isTriggered() const* ###
+
+Reads the current state of the `OneShot`.
+
+#### Returns ####
+
+- **bool:** `true` if `OneShot` has been triggered but not yet timed out, otherwise `false`.
+
