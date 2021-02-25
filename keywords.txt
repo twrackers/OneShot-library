@@ -13,6 +13,8 @@ OneShot	KEYWORD1
 update	KEYWORD2
 trigger	KEYWORD2
 isTriggered	KEYWORD2
+enableRetrigger KEYWORD2
+retriggerEnabled    KEYWORD2
 
 #######################################
 # Constants (LITERAL1)
