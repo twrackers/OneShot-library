@@ -44,3 +44,7 @@ bool OneShot::retriggerEnabled() const
 {
   return m_retriggerable;
 }
+
+void OneShot::clear() {
+  m_triggered = false;
+}

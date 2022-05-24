@@ -34,8 +34,11 @@ public:
   void enableRetrigger(const bool enable);
   
   // Return true if this object has retrigger enabled.
-  // @ return retrigger mode
+  // @return retrigger mode
   bool retriggerEnabled() const;
+  
+  // Clear triggered state.
+  void clear();
 };
 
 #endif
