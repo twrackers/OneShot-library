@@ -38,6 +38,10 @@ Checks if it is time to update the state of the `OneShot` object.  This method s
 
 - **bool:** `true` if it was time to update the object's internal state machine.  Usually can be ignored.
 
+### *void trigger()* ###
+
+Sets the state of the `OneShot` to `true` (triggered) and begins the timeout period.
+
 ### *bool isTriggered() const* ###
 
 Reads the current state of the `OneShot`.
