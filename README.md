@@ -65,3 +65,7 @@ Gets current retrigger mode.
 #### Returns ####
 
 - **bool:** `true` if enabled, `false` if disabled.
+
+### *void clear()* ###
+
+Sets the state of the `OneShot` to `false` (not triggered) and cancels its timeout period.  This is the opposite of the `trigger()` method.
