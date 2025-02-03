@@ -6,7 +6,7 @@
 class OneShot : public StateMachine
 {
 private:
-  const unsigned int m_delay;   // length in msec of on-state after trigger
+  const unsigned long m_delay;  // length in usec of on-state after trigger
   unsigned long m_timeout;      // time of next update
   bool m_retriggerable;         // enable/disable retrigger function
   bool m_triggered;             // triggered state
